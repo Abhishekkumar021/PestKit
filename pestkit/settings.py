@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-y=*5zk$kj0n%cztk8czgtd5#v#1%7#pvayk@5^69zr1#e9c+_s"
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,15 +82,12 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "pestkit",
-        "USER": "development",
-        "PASSWORD": "developmentPassword02@",
+        "USER": os.getenv('user'),
+        "PASSWORD": os.getenv('password'),
         "HOST": "127.0.0.1",
-        "PORT": "3306",
+        "PORT": os.getenv('port'),
     }
 }
-# username=admin
-# email=admin123@gmail.com
-# password=123456
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
