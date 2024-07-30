@@ -1,0 +1,140 @@
+# Python
+*.py[cod]
+*.pyo
+*.pyd
+__pycache__
+*.so
+
+# Env files
+.env
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+/db.sqlite3-journal
+media
+/staticfiles
+/static
+
+# If your static files are stored outside of the 'static' folder
+# /path/to/your/static/folder
+
+# If you are using Django Compressor
+/compressed
+
+# If you are using pipenv
+Pipfile
+Pipfile.lock
+
+# Virtual Environment
+venv/
+env/
+ENV/
+venv.bak/
+venv.bak/
+
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Pytest
+.cache
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Cython debug symbols
+cython_debug/
+
+# Sublime Text
+*.sublime-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
